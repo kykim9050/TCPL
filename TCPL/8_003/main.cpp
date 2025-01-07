@@ -9,7 +9,8 @@ using pachar_t = char(*)[10];
 //  array of 7 pointers to int
 using apint_t = int(*[7]);
 // pointer to an array of 7 pointers to int
-using papint_t = apint_t*;
+//using papint_t = apint_t*;
+ using papint_t = int(*(*)[7]);
 // array of 8 arrays of 7 pointers to int
 using aapint_t = int(*[8][7]);
 
