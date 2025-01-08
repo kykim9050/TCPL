@@ -30,5 +30,9 @@ int main(void)
 	SwapInt(first, second);
 	std::cout << first << " " << second << std::endl;
 
+	char str[] = "a short string";
+	std::cout << sizeof(str) << std::endl;
+	std::cout << strlen(str) << std::endl;
+
 	return 0;
 }
