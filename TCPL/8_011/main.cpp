@@ -11,6 +11,8 @@ const string QuitStr = "Quit";
 vector<string> RemoveDup(const vector<string>& _origin)
 {
 	vector<string> ret;
+	// 미리 넉넉하게 capacity 할당
+	ret.reserve(_origin.size());
 	string prevStr = "";
 
 	int size = static_cast<int>(_origin.size());
@@ -33,10 +35,8 @@ vector<string> ModifyWords(vector<string>& _origin)
 	sort(_origin.begin(), _origin.end());
 
 	// 중복 제거
-	vector<string> Ret;
-	Ret = RemoveDup(_origin);
-
-	return Ret;
+	// 결과를 우변값으로 활성화 하여 이동 연산을 사용하도록 지정
+	return RemoveDup(_origin);
 }
 
 int main(void)
