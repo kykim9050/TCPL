@@ -40,7 +40,7 @@ int FindPattern(const char* _Str, const char* _Pattern)
 	return dupNum;
 }
 
-int FindPattern(string _Str, string _Pattern)
+int FindPattern(const string& _Str, const string& _Pattern)
 {
 	return FindPattern(_Str.c_str(), _Pattern.c_str());
 }
